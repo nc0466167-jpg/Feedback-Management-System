@@ -1,0 +1,181 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Feedback System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>Feed<span>Back.</span></h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#feedback">Give Feedback</a>
+            <a href="#overview">Dashboard</a>
+            <a href="#about">About</a>
+            <a href="login.html">Admin</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Your Voice Matters!</h1>
+        <p>Share your experience and help us improve.</p>
+        <a href="#feedback" class="hero-btn">Give Feedback</a>
+    </section>
+
+    <!-- Feedback Form -->
+    <section class="feedback-section" id="feedback">
+
+        <h2>Share Your Experience</h2>
+        <p>We would love to hear from you.</p>
+
+        <form id="feedbackForm">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name"
+                placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email"
+                placeholder="Enter your email" required>
+
+            <label for="category">Feedback Category</label>
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option value="Website Experience">Website Experience</option>
+                <option value="Service Quality">Service Quality</option>
+                <option value="Support">Support</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>How was your experience?</label>
+
+            <div class="emoji-rating">
+                <label>
+                    <input type="radio" name="mood" value="Happy" required>
+                    😊
+                </label>
+
+                <label>
+                    <input type="radio" name="mood" value="Neutral">
+                    😐
+                </label>
+
+                <label>
+                    <input type="radio" name="mood" value="Sad">
+                    😞
+                </label>
+            </div>
+
+            <label for="message">Your Feedback</label>
+            <textarea id="message"
+                placeholder="Write your feedback here..."
+                required></textarea>
+
+            <label for="rating">Rating</label>
+            <select id="rating" required>
+                <option value="">Select Rating</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+            </select>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+    </section>
+
+    <!-- Dashboard Statistics -->
+    <section class="stats-section" id="overview">
+
+        <h2>Feedback Overview</h2>
+
+        <div class="stats-container">
+
+            <div class="stat-card">
+                <h3 id="totalFeedback">0</h3>
+                <p>Total Feedback</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="averageRating">0.0</h3>
+                <p>Average Rating</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="fiveStar">0</h3>
+                <p>5 Star Reviews</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Recent Feedback -->
+    <section class="feedback-history" id="history">
+
+        <h2>Recent Feedback</h2>
+
+        <div id="feedbackList">
+            <p>No feedback available yet.</p>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+
+        <div class="about-container">
+
+            <div class="about-heading">
+                <span>WHO WE ARE</span>
+                <h2>About Our System</h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <p class="about-description">
+                Smart Feedback Management System is a user-friendly
+                web application designed to collect, organize and
+                manage feedback efficiently. It helps administrators
+                understand user experiences, analyze responses and
+                improve service quality.
+            </p>
+
+            <div class="mission-card">
+
+                <div class="mission-icon">🎯</div>
+
+                <h3>Our Mission</h3>
+
+                <p>
+                    Our mission is to turn valuable feedback into
+                    meaningful improvements by understanding user
+                    needs and delivering better services.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Smart Feedback Management System</p>
+        <p>Your Feedback Helps Us Grow!</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
